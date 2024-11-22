@@ -41,7 +41,8 @@ export default function Formulario() {
     }
   };
 
-   const handleCepChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+  // Função para lidar com a mudança do CEP
+  const handleCepChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setCep(e.target.value);
     setLogradouro('');
     setBairro('');
@@ -49,19 +50,18 @@ export default function Formulario() {
     setEstado('');
     setErro(false); // Resetando o erro ao alterar o CEP
   }
-  
 
-  //enviar feedback
-  const handleFeedbackChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setFeedback(e.target.value)
+  // Função para lidar com o feedback
+  const handleFeedbackChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
+    setFeedback(e.target.value);
   }
 
   const enviarFeedback = () => {
-    if(feedback.trim()) {
+    if (feedback.trim()) {
       setFeedbackEnviado(true);
       setFeedback('');
     } else {
-      alert("Por favor, forneça um feedback")
+      alert("Por favor, forneça um feedback");
     }
   }
 
@@ -136,9 +136,14 @@ export default function Formulario() {
         {erro && <p className={styles.mensagemErro}>Erro ao buscar o CEP. Tente novamente.</p>}
 
         <div className={styles.feedbackContainer}>
-          <label htmlFor="feedback" className={styles.label}>O que você da nossa emprega?</label>
-          <textarea id="feedback" value={feedback} onChange={handleFeedbackChange} placeholder='Digite seu feedback aqui' className={styles.textarea}>
-          </textarea>
+          <label htmlFor="feedback" className={styles.label}>O que você acha da nossa empresa?</label>
+          <textarea
+            id="feedback"
+            value={feedback}
+            onChange={handleFeedbackChange}
+            placeholder='Digite seu feedback aqui'
+            className={styles.textarea}
+          />
           <button type='button' onClick={enviarFeedback} className={styles.botaoFeedback}>Enviar Feedback</button>
 
           {feedbackEnviado && <p className={styles.mensagemAgradecimento}>Obrigado pelo seu feedback!</p>}
