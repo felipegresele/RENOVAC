@@ -41,7 +41,7 @@ export default function Formulario() {
     }
   };
 
-  const handleCepChange = (e) => {
+   const handleCepChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setCep(e.target.value);
     setLogradouro('');
     setBairro('');
@@ -49,9 +49,10 @@ export default function Formulario() {
     setEstado('');
     setErro(false); // Resetando o erro ao alterar o CEP
   }
+  
 
   //enviar feedback
-  const handleFeedbackChange = (e) => {
+  const handleFeedbackChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setFeedback(e.target.value)
   }
 
