@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+.container {
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.container .banner {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os itens se ajustem quando a tela for menor */
+    justify-content: space-between;
+}
+
+.container .img_content {
+    width: 800px;
+    padding: 20px;
+    margin-right: 30px;
+}
+
+.container .img_content .img {
+    border-radius: 20px;
+    width: 700px;
+    margin-top: 20px;
+}
+
+.container .banner .title {
+    font-size: 50px;
+}
+
+.container .banner .title span {
+    font-size: 60px;
+}
+
+.container .banner .description {
+    font-size: 20px;
+    width: 60%;
+}
+
+.container .banner .btn {
+    font-size: 18px;
+    width: 130px;
+    background-color: transparent;
+    border-radius: 5px;
+    border: 1px solid #333;
+    padding: 15px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+
+.container .cart {
+    margin-top: 40px;
+    padding: 30px 10px;
+    display: flex;
+    gap: 50px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Permite que os itens se ajustem em telas menores */
+}
+
+.container .cart .cart_item {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.container .cart .cart_item .img_item {
+    width: 80px;
+}
+
+.container .cart .cart_item p {
+    font-size: 15px;
+}
+
+.container .cart .cart_item .btn_item {
+    width: 110px;
+    border: none;
+    background-color: transparent;
+    margin-top: 10px;
+    padding: 12px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+.container .cart .cart_item .desp_item {
+    font-size: 15px;
+}
+
+.container .cart .cart_item .btn_item:hover {
+    color: orange;
+    cursor: pointer;
+    border: 1px solid orange;
+}
+
+/* Estilos Responsivos para telas pequenas */
+@media (max-width: 768px) {
+    .container .banner {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .container .img_content {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .container .banner .title {
+        font-size: 40px;
+    }
+
+    .container .banner .description {
+        font-size: 18px;
+        width: 80%;
+    }
+
+    .container .cart {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .container .cart .cart_item {
+        padding: 20px;
+        width: 80%;
+    }
+
+    .container .cart .cart_item .img_item {
+        width: 70px;
+    }
+
+    .container .cart .cart_item p {
+        font-size: 14px;
+    }
+
+    .container .cart .cart_item .btn_item {
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container .banner {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container .banner .title {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .container .banner .description {
+        font-size: 16px;
+        width: 90%;
+        text-align: center;
+    }
+
+    .container .cart {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .container .cart .cart_item {
+        padding: 15px;
+        width: 90%;
+    }
+
+    .container .cart .cart_item .img_item {
+        width: 60px;
+    }
+
+    .container .cart .cart_item p {
+        font-size: 13px;
+    }
+
+    .container .cart .cart_item .btn_item {
+        width: 100%;
+        padding: 8px;
+    }
+}

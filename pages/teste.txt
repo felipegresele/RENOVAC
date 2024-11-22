@@ -1,0 +1,25 @@
+<div className={styles.itemContent}>
+                <div className={styles.item}>
+                    <img src={img1.src} className={styles.itemImg} />
+                    <p></p>
+                    <Link href=""  className={styles.itemLink}>Nosso Compromisso</Link>
+                </div>
+
+                <div className={styles.item}>
+                    <img src={img2.src} className={styles.itemImg} />
+                    <p></p>
+                    <Link href=""  className={styles.itemLink}>Dicas Sustentáveis</Link>
+                </div>
+
+                <div className={styles.item}>
+                    <img src={img3.src} className={styles.itemImg} />
+                    <p></p>
+                    <Link href=""  className={styles.itemLink}>Projetos Sustentáveis</Link>
+                </div>
+
+                <div className={styles.item}>
+                    <img src={img4.src} className={styles.itemImg} />
+                    <p></p>
+                    <Link href="" className={styles.itemLink}>Quer Ajudar?</Link>
+                </div>
+            </div>

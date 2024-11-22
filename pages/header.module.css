@@ -1,0 +1,283 @@
+/* Importando a fonte Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+/* Estilos gerais */
+.homeContainer {
+    padding-top: 100px; /* Espaçamento para que o conteúdo não fique escondido atrás do header */
+    font-family: "Poppins", sans-serif;
+}
+
+.headerContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #ffffff; /* Cor de fundo do header */
+    z-index: 1000; /* Garante que o header fique acima de outros elementos */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra para destaque */
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.header img {
+    height: 140px; 
+    width: 250px;
+}
+
+.itemContent nav ul {
+    display: inline;
+    list-style: none;
+    margin: 0 15px;
+    padding: 0;
+}
+
+.itemContent nav ul li {
+    display: inline;
+}
+
+.itemLink,
+.linkLogin {
+    text-decoration: none;
+    color: #0066b3; /* Ajuste de cor conforme necessário */
+    font-weight: bold;
+    padding: 8px 12px;
+    transition: color 0.3s;
+}
+
+.linkLogin {
+    border: 1px solid #0066b3; 
+}
+
+.itemLink:hover,
+.linkLogin:hover {
+    color: #004c8c; /* Cor ao passar o mouse */
+}
+
+.bannerContent {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 40px;
+    margin: 0 auto; /* Centraliza o conteúdo */
+}
+
+.subtitle {
+    font-size: 20px;
+    color: #0066b3;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.title {
+    font-size: 50px;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 20px;
+}
+
+.description {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #4d4d4d;
+    margin-bottom: 30px;
+}
+
+.buttonContainer {
+    display: flex;
+    gap: 20px;
+}
+
+.primaryButton {
+    background-color: #0066b3;
+    color: #ffffff;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.primaryButton:hover {
+    background-color: #004c8c;
+}
+
+.secondaryButton {
+    background-color: #ffffff;
+    color: #0066b3;
+    padding: 12px 24px;
+    border: 2px solid #0066b3;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.secondaryButton:hover {
+    background-color: #e6f3ff;
+}
+
+.bannerImg img {
+    max-width: 100%;
+    height: auto;
+}
+
+.statContainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+}
+
+.statItem {
+    text-align: center;
+}
+
+.circle {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 8px solid #0066b3; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease; 
+}
+
+.circle:hover {
+    transform: scale(1.1);
+}
+
+.percentage {
+    font-size: 28px;
+    font-weight: bold;
+    color: #0066b3; 
+    z-index: 1;
+}
+
+.statDescription {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .header {
+        padding: 10px 15px;
+    }
+
+    .header img {
+        height: 100px;
+        width: 180px;
+    }
+
+    .bannerContent {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .subtitle {
+        font-size: 18px;
+    }
+
+    .title {
+        font-size: 40px;
+    }
+
+    .description {
+        font-size: 16px;
+    }
+
+    .buttonContainer {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .primaryButton, .secondaryButton {
+        width: 100%;
+    }
+
+    .statContainer {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .circle {
+        width: 100px;
+        height: 100px;
+    }
+
+    .percentage {
+        font-size: 24px;
+    }
+
+    .statDescription {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        padding: 10px 10px;
+    }
+
+    .header img {
+        height: 80px;
+        width: 150px;
+    }
+
+    .bannerContent {
+        padding: 15px;
+    }
+
+    .subtitle {
+        font-size: 16px;
+    }
+
+    .title {
+        font-size: 30px;
+    }
+
+    .description {
+        font-size: 14px;
+    }
+
+    .buttonContainer {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .primaryButton, .secondaryButton {
+        padding: 10px 20px;
+    }
+
+    .statContainer {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .circle {
+        width: 90px;
+        height: 90px;
+    }
+
+    .percentage {
+        font-size: 20px;
+    }
+
+    .statDescription {
+        font-size: 12px;
+    }
+}

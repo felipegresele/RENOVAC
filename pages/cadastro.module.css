@@ -1,0 +1,91 @@
+/* cadastro.module.css */
+.container {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .img_content {
+    width: 50%; /* Altera a largura para ocupar metade da tela */
+  }
+  
+  .img {
+    width: 100%; /* A imagem ocupará 100% da largura do container */
+    height: 100vh; /* A imagem ocupará toda a altura da tela */
+    object-fit: cover; 
+  }
+  
+  .container_cadastro {
+    display: flex;
+    flex-direction: column; /* Organiza os elementos verticalmente */
+    justify-content: center; /* Centraliza o conteúdo verticalmente */
+    align-items: center; /* Centraliza o conteúdo horizontalmente */
+    width: 50%; /* O formulário ocupará a outra metade da tela */
+    background-color: white; /* Fundo branco para o formulário */
+    padding: 30px;
+    height: 100vh; /* Garante que o formulário ocupe toda a altura da tela */
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1); /* Sombra para separar visualmente da imagem */
+  }
+  
+  .h2 {
+    text-align: center; /* Centraliza o título */
+    margin-bottom: 20px;
+    font-size: 28px; /* Aumenta o tamanho do título */
+    color: #333; /* Cor escura para o título */
+  }
+  
+  .input_group {
+    width: 100%;
+    margin-bottom: 15px; /* Espaçamento entre os campos */
+  }
+  
+  .form_label {
+    font-size: 16px;
+    color: #333; /* Cor escura para o texto do label */
+    margin-bottom: 8px;
+    display: block; /* Faz o label ocupar a linha inteira */
+  }
+  
+  .form_control {
+    width: 100%;
+    padding: 12px; /* Aumenta o padding para melhorar a aparência dos campos */
+    border: 1px solid #ccc; /* Borda suave */
+    border-radius: 8px; /* Bordas arredondadas */
+    font-size: 16px;
+    color: #333;
+    outline: none; /* Remove o contorno padrão do navegador */
+    transition: border-color 0.3s ease; /* Transição suave ao focar no campo */
+  }
+  
+  .form_control:focus {
+    border-color: #4e90f5; /* Cor do contorno ao focar no campo */
+  }
+  
+  .alert {
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    border-radius: 5px;
+  }
+  
+  .submit_link {
+    text-align: center;
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: #4e90f5; /* Cor de fundo do botão */
+    color: white; /* Cor do texto */
+    text-decoration: none;
+    border-radius: 8px; /* Bordas arredondadas */
+    font-size: 16px;
+    transition: background-color 0.3s ease; /* Transição suave ao passar o mouse */
+  }
+  
+  .submit_link:hover {
+    background-color: #3578d2; /* Cor de fundo ao passar o mouse */
+  }
+  
+  .submit_link:active {
+    background-color: #285a9d; /* Cor de fundo ao clicar */
+  }
+  

@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+.projetos_container {
+    padding: 40px;
+    background-color: #f8f9fa;
+    font-family: "Poppins", sans-serif;
+}
+
+.projetos_container h1 {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+.projetos_container .text_container {
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 40px;
+    line-height: 1.6;
+    color: #6c757d;
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.items_container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px; /* Espaçamento entre os itens */
+}
+
+.items_container .item {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.items_container .item:hover {
+    transform: translateY(-5px); /* Eleva levemente o item ao passar o mouse */
+}
+
+.items_container .item .item_img {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Esconde partes fora do container */
+    border-radius: 8px 0 0 8px;
+}
+
+.items_container .item .item_img img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s; /* Transição suave para o efeito de zoom */
+    border-radius: 8px 0 0 8px;
+}
+
+.items_container .item .item_img:hover img {
+    transform: scale(1.05); /* Zoom na imagem */
+}
+
+.items_container .item .item_texto {
+    flex: 2;
+    padding: 40px;
+    box-shadow: -4px 0 8px rgba(0, 0, 0, 0.2);
+    border-radius: 0 8px 8px 0;
+    background-color: #f4f6f8;
+}
+
+.items_container .item .item_texto .titulo_item {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #34495e;
+}
+
+.items_container .item .item_texto .descricao_item {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #7b8b99;
+}
